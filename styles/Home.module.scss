@@ -1,3 +1,44 @@
-.apre {
-  background: green;
+@import 'variables.scss';
+
+.introduction {
+  h1 {
+    color: $text-01;
+
+    span {
+      background: $primary;
+      color: white;
+      padding: 0 2px;
+    }
+  }
+
+  p {
+    color: $text-02;
+    margin-top: 8px;
+
+    @media (min-width: $lg) {
+      width: 730px;
+    }
+  }
+
+  ul {
+    margin-top: 16px;
+
+    @media (min-width: $lg) {
+      margin-top: 24px;
+    }
+
+    li {
+      &:not(:first-of-type) {
+        margin-top: 8px;
+
+        @media (min-width: $lg) {
+          margin-top: 16px;
+        }
+      }
+
+      strong {
+        color: $primary;
+      }
+    }
+  }
 }
