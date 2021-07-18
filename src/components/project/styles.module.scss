@@ -1,0 +1,97 @@
+@import 'variables.scss';
+
+.project {
+  @media (min-width: $lg) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    @media (min-width: $lg) {
+      width: 580px;
+    }
+  }
+}
+
+.image--inverted {
+  @media (min-width: $lg) {
+    order: 2;
+  }
+}
+
+.content {
+  @media (min-width: $lg) {
+    margin-left: 30px;
+  }
+}
+
+.content--inverted {
+  @media (min-width: $lg) {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+
+.title {
+  color: $text-01;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 8px;
+
+  @media (min-width: $lg) {
+    font-size: 64px;
+    line-height: 77px;
+  }
+
+  a {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $lg) {
+      justify-content: start;
+    }
+
+    span {
+      @media (min-width: $lg) {
+        margin-right: 26px;
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+.text {
+  color: $text-02;
+  margin-top: 8px;
+
+  @media (min-width: $lg) {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 24px;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-flow: wrap;
+  margin: 10px -6px 0 -6px;
+
+  @media (min-width: $lg) {
+    margin-top: 30px;
+  }
+}
+
+.tag {
+  border: 1px solid $primary;
+  color: $primary;
+  font-size: 12px;
+  font-style: italic;
+  margin: 6px 0 0 6px;
+  padding: 3px 16px;
+
+  @media (min-width: $lg) {
+    font-size: 14px;
+  }
+}

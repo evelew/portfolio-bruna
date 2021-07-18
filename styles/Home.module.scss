@@ -13,7 +13,7 @@
 
   p {
     color: $text-02;
-    margin-top: 8px;
+    margin-top: 12px;
 
     @media (min-width: $lg) {
       width: 730px;
@@ -21,10 +21,10 @@
   }
 
   ul {
-    margin-top: 16px;
+    margin-top: 18px;
 
     @media (min-width: $lg) {
-      margin-top: 24px;
+      margin-top: 26px;
     }
 
     li {
@@ -39,6 +39,16 @@
       strong {
         color: $primary;
       }
+    }
+  }
+}
+
+.projects {
+  margin-top: 50px;
+
+  article {
+    &:not(:first-of-type) {
+      margin-top: 40px;
     }
   }
 }

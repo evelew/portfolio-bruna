@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 
 const Header = () => {
   const router = useRouter()
+
   const isActive = (link: String) => router.asPath === link
 
   const links = [
