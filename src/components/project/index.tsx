@@ -7,6 +7,7 @@ import s from './styles.module.scss'
 const Project = ({
   title = String(),
   text = String(),
+  link = String(),
   image = Object(),
   tags = Array(),
   inverted = Boolean()
@@ -23,7 +24,7 @@ const Project = ({
         className={`${s.content} ${inverted ? s['content--inverted'] : ''} `}
       >
         <h2 className={s.title}>
-          <a href="" target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             <span>{title}</span>
             <ArrowSvg />
           </a>

@@ -1,0 +1,17 @@
+@import 'variables.scss';
+
+.title {
+  color: $primary;
+}
+
+.content {
+  margin-top: 18px;
+
+  @media (min-width: $lg) {
+    margin-top: 25px;
+  }
+
+  p {
+    color: $text-02;
+  }
+}
