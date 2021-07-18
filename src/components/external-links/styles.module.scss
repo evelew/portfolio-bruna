@@ -1,0 +1,41 @@
+@import 'variables.scss';
+
+.external-links {
+  margin-top: 80px;
+}
+
+.list {
+  @media (min-width: $lg) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.list-item {
+  &:not(:first-of-type) {
+    margin-top: 40px;
+
+    @media (min-width: $lg) {
+      margin-top: 0;
+    }
+  }
+}
+
+.link {
+  align-items: center;
+  display: flex;
+
+  span {
+    color: $text-01;
+    font-family: 'Red Hat Display', arial, sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    margin-right: 26px;
+
+    @media (min-width: $lg) {
+      font-size: 48px;
+      line-height: 65px;
+    }
+  }
+}
