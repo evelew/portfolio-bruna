@@ -1,0 +1,39 @@
+@import 'variables.scss';
+
+.header {
+  margin-bottom: 28px;
+  padding-top: 12px;
+
+  @media (min-width: $lg) {
+    margin-bottom: 150px;
+    padding-top: 36px;
+  }
+
+  .header__menu {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      &.active {
+        a {
+          color: $primary;
+          font-weight: bold;
+        }
+      }
+
+      a {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 13px;
+        padding: 12px;
+
+        @media (min-width: $lg) {
+          font-size: 16px;
+          line-height: 15px;
+          padding: 12px 25px;
+        }
+      }
+    }
+  }
+}
