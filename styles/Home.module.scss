@@ -1,16 +1,6 @@
 @import 'variables.scss';
 
 .introduction {
-  h1 {
-    color: $text-01;
-
-    span {
-      background: $primary;
-      color: white;
-      padding: 0 2px;
-    }
-  }
-
   p {
     color: $text-02;
     margin-top: 12px;
@@ -42,6 +32,24 @@
       }
     }
   }
+}
+
+.introduction__title {
+  color: $text-01;
+}
+
+.introduction__title-svg {
+  left: calc(50% - 10px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: calc(50% + 10px);
+  z-index: -1;
+}
+
+.introduction__title-name {
+  color: $primary;
+  font-weight: bold;
+  position: relative;
 }
 
 .projects {

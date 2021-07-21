@@ -1,0 +1,24 @@
+@import 'variables.scss';
+
+.wrapper {
+  bottom: 120px;
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+}
+
+.button {
+  background-color: transparent;
+  bottom: 0;
+  border: none;
+  cursor: pointer;
+  right: 16px;
+  position: absolute;
+  z-index: 100;
+
+  @media (min-width: $lg) {
+    right: 0;
+  }
+}
