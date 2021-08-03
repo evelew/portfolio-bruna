@@ -1,10 +1,11 @@
+import { Fragment } from 'react'
 import Head from 'next/head'
 
 import s from 'styles/about.module.scss'
 
 const About = () => {
   return (
-    <main>
+    <Fragment>
       <Head>
         <title>Bruna Freitas | about</title>
         <meta name="description" content="Bruna Freitas | Product Designer" />
@@ -47,7 +48,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </main>
+    </Fragment>
   )
 }
 

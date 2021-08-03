@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -13,7 +14,7 @@ import s from 'styles/home.module.scss'
 
 export default function Home() {
   return (
-    <main>
+    <Fragment>
       <Head>
         <title>Bruna Freitas</title>
         <meta name="description" content="Bruna Freitas | Product Designer" />
@@ -108,6 +109,6 @@ export default function Home() {
       </section>
 
       <GoTotopButton />
-    </main>
+    </Fragment>
   )
 }

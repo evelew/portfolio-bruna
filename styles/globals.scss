@@ -1,6 +1,10 @@
 @import 'variables.scss';
 @import 'header.scss';
 
+$headerHeight: 225;
+$footerHeight: 246;
+$total: $headerHeight + $footerHeight;
+
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', arial, sans-serif;
@@ -8,9 +12,33 @@
   padding: 0;
 }
 
+main {
+  @media (min-width: $lg) {
+    min-height: calc(100vh - #{$total}px);
+  }
+}
+
 a {
   color: inherit;
+  position: relative;
   text-decoration: none;
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &:after {
+    background-color: red;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: width 0.3s ease;
+    width: 0;
+  }
 }
 
 h1 {
@@ -52,5 +80,5 @@ li {
 .container {
   padding: 0 24px;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
 }

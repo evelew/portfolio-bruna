@@ -11,8 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Header />
-      <Component {...pageProps} />
-      <ExternalLinks />
+      <main>
+        <Component {...pageProps} />
+        <ExternalLinks />
+      </main>
       <Footer />
     </Fragment>
   )
