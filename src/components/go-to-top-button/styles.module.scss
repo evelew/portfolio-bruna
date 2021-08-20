@@ -1,12 +1,17 @@
 @import 'variables.scss';
 
 .wrapper {
-  bottom: 120px;
-  position: fixed;
-  width: 100%;
+  bottom: 90px;
   left: 50%;
-  z-index: 0;
+  position: fixed;
   transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+  width: 100%;
+  z-index: 0;
+
+  @media (min-width: $lg) {
+    bottom: 120px;
+  }
 }
 
 .button {
