@@ -26,8 +26,8 @@ const Project = ({
         <h2 className={s.title}>
           <a href={link} target="_blank" rel="noreferrer">
             <span>{title}</span>
-            <ArrowSvg />
           </a>
+          <ArrowSvg />
         </h2>
 
         <p className={s.text}>{text}</p>

@@ -42,22 +42,45 @@
   @media (min-width: $lg) {
     font-size: 64px;
     line-height: 77px;
+
+    &:hover {
+      a {
+        background-size: 100% 2px;
+      }
+
+      svg {
+        transform: translateX(10px);
+      }
+    }
   }
 
   a {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    &:after {
+      display: none;
+    }
 
     @media (min-width: $lg) {
+      background: linear-gradient(currentColor, currentColor) left bottom
+        no-repeat;
+      background-size: 0% 2px;
+      box-decoration-break: clone;
       justify-content: start;
+      transition: all 0.3s;
     }
 
     span {
       @media (min-width: $lg) {
-        margin-right: 26px;
         max-width: 450px;
       }
+    }
+  }
+
+  svg {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+
+    @media (min-width: $lg) {
+      margin-left: 26px;
     }
   }
 }

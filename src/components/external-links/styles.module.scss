@@ -13,6 +13,9 @@
 }
 
 .list-item {
+  align-items: center;
+  display: flex;
+
   &:not(:first-of-type) {
     margin-top: 40px;
 
@@ -20,11 +23,29 @@
       margin-top: 0;
     }
   }
+
+  @media (min-width: $lg) {
+    &:hover {
+      svg {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  svg {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
 }
 
 .link {
-  align-items: center;
-  display: flex;
+  @media (min-width: $lg) {
+    &:hover {
+      &:after {
+        width: 81%;
+      }
+    }
+  }
 
   span {
     color: $text-01;
