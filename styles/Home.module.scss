@@ -54,11 +54,24 @@
 }
 
 .introduction__title-svg {
-  left: calc(50% - 10px);
+  left: calc(50%);
   position: absolute;
   transform: translate(-50%, -50%);
-  top: calc(50% + 10px);
+  top: calc(50% + 5px);
   z-index: -1;
+
+  @media (min-width: $lg) {
+    left: calc(50% - 10px);
+    top: calc(50% + 10px);
+  }
+
+  svg {
+    width: 120px;
+
+    @media (min-width: $lg) {
+      width: auto;
+    }
+  }
 }
 
 .path {
