@@ -1,7 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-const analyticsID = process.env.ANALYTICS_ID
-
 class MyDocument extends Document {
   render() {
     return (
@@ -13,7 +11,7 @@ class MyDocument extends Document {
           />
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${analyticsID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.ANALYTICS_ID}`}
           />
         </Head>
 
