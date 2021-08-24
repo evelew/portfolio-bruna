@@ -43,7 +43,7 @@ const About = () => {
           </p>
 
           <p>
-            Feel free to reach me out throgh my e-mail brunasfreitas2@gmail.com
+            Feel free to reach me out through my e-mail brunasfreitas2@gmail.com
             or any of my contacts below:
           </p>
         </div>

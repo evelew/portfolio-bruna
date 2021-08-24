@@ -16,7 +16,7 @@ const Contact = () => {
         <h1 className={s.title}>hi,</h1>
         <div className={s.content}>
           <p>
-            Feel free to reach me out throgh my e-mail{' '}
+            Feel free to reach me out through my e-mail{' '}
             <i>brunasfreitas2@gmail.com</i>
             or any of my contacts below:
           </p>
