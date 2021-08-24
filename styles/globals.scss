@@ -1,6 +1,10 @@
 @import 'variables.scss';
 @import 'header.scss';
 
+$headerHeightMobile: 106;
+$footerHeightMobile: 132;
+$totalMobile: $headerHeightMobile + $footerHeightMobile;
+
 $headerHeight: 225;
 $footerHeight: 246;
 $total: $headerHeight + $footerHeight;
@@ -13,6 +17,8 @@ $total: $headerHeight + $footerHeight;
 }
 
 main {
+  min-height: calc(100vh - #{$totalMobile}px);
+
   @media (min-width: $lg) {
     min-height: calc(100vh - #{$total}px);
   }
