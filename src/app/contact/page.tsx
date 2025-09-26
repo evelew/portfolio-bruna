@@ -1,0 +1,28 @@
+import Head from 'next/head'
+
+import s from '@/app/styles/contact.module.scss'
+
+const Contact = () => {
+  return (
+    <>
+      <Head>
+        <title>Bruna Freitas | contact</title>
+        <meta name="description" content="Bruna Freitas | Product Designer" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div className="container">
+        <h1 className={s.title}>hi,</h1>
+        <div className={s.content}>
+          <p>
+            Feel free to reach me out through my e-mail{' '}
+            <i>brunasfreitas2@gmail.com</i>{' '}
+            or any of my contacts below:
+          </p>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Contact

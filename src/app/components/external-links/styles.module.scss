@@ -1,0 +1,62 @@
+@use 'variables.scss' as *;
+
+.external-links {
+  margin-top: 80px;
+}
+
+.list {
+  @media (min-width: $lg) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.list-item {
+  align-items: center;
+  display: flex;
+
+  &:not(:first-of-type) {
+    margin-top: 40px;
+
+    @media (min-width: $lg) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $lg) {
+    &:hover {
+      img {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  img {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+}
+
+.link {
+  @media (min-width: $lg) {
+    &:hover {
+      &:after {
+        width: 81%;
+      }
+    }
+  }
+
+  span {
+    color: $text-01;
+    font-family: 'Red Hat Display', arial, sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    margin-right: 26px;
+
+    @media (min-width: $lg) {
+      font-size: 48px;
+      line-height: 65px;
+    }
+  }
+}

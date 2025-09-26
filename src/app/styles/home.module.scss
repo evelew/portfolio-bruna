@@ -1,0 +1,99 @@
+@use'variables.scss' as *;
+
+@keyframes strokeFill {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.introduction {
+  p {
+    color: $text-02;
+    margin-top: 12px;
+
+    @media (min-width: $lg) {
+      width: 730px;
+    }
+  }
+
+  ul {
+    margin-top: 18px;
+
+    @media (min-width: $lg) {
+      margin-top: 26px;
+    }
+
+    li {
+      &:not(:first-of-type) {
+        margin-top: 8px;
+
+        @media (min-width: $lg) {
+          margin-top: 16px;
+        }
+      }
+
+      a {
+        color: $primary;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.introduction__emoji {
+  width: 24px;
+
+  @media (min-width: $lg) {
+    width: 60px;
+  }
+}
+
+.introduction__title {
+  color: $text-01;
+  margin-top: 8px;
+}
+
+.introduction__title-svg {
+  left: calc(50%);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: calc(50% + 5px);
+  z-index: -1;
+
+  @media (min-width: $lg) {
+    left: calc(50% - 10px);
+    top: calc(50% + 10px);
+  }
+
+  svg {
+    width: 120px;
+
+    @media (min-width: $lg) {
+      width: auto;
+    }
+  }
+}
+
+.path {
+  animation: strokeFill 1.4s ease-in-out forwards;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+}
+
+.introduction__title-name {
+  color: $primary;
+  font-weight: bold;
+  position: relative;
+}
+
+.projects {
+  margin-top: 50px;
+
+  article {
+    margin-top: 100px;
+
+    &:not(:first-of-type) {
+      margin-top: 40px;
+    }
+  }
+}

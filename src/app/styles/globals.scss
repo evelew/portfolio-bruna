@@ -1,0 +1,93 @@
+@use'variables.scss' as *;
+@use'header.scss';
+
+$headerHeightMobile: 106;
+$footerHeightMobile: 132;
+$totalMobile: $headerHeightMobile + $footerHeightMobile;
+
+$headerHeight: 225;
+$footerHeight: 246;
+$total: $headerHeight + $footerHeight;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: calc(100vh - #{$totalMobile}px);
+
+  @media (min-width: $lg) {
+    min-height: calc(100vh - #{$total}px);
+  }
+}
+
+a,
+.link-hover {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+
+  @media (min-width: $lg) {
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &:after {
+    background-color: currentColor;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: width 0.3s ease;
+    width: 0;
+  }
+}
+
+h1 {
+  font-family: 'Red Hat Display', arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41px;
+
+  @media (min-width: $lg) {
+    font-size: 80px;
+    line-height: 102px;
+  }
+}
+
+p {
+  font-size: 14px;
+  line-height: 19px;
+
+  @media (min-width: $lg) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 14px;
+  line-height: 19px;
+
+  @media (min-width: $lg) {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.container {
+  padding: 0 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
