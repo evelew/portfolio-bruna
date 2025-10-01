@@ -18,7 +18,7 @@ export default function Home() {
       <section className={s.introduction}>
         <div className="container">
           <div className={s['introduction__emoji']}>
-            <Image src="/images/nerd-face.png" alt="Nerd face emoji" width={24} height={24} />
+            <Image src="/images/nerd-face.png" alt="Nerd face emoji" quality={100} width={120} height={120} />
           </div>
 
           <h1 className={s['introduction__title']}>
@@ -51,7 +51,7 @@ export default function Home() {
                 olist
               </a>
             </li>
-            <li>📌 living in São Paulo, Brazil</li>
+            <li>📌 living in Curitiba, Brazil</li>
             <li>
               🎧 listening to this{' '}
               <a

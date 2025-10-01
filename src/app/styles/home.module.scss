@@ -46,6 +46,11 @@
   @media (min-width: $lg) {
     width: 60px;
   }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .introduction__title {
