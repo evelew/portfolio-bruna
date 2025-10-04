@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className="container">
-        <span className={s.year}>2021</span>
+        <span className={s.year}>2025</span>
         <p className={s.text}>
           designed by me, coded by{' '}
           <a
