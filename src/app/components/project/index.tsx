@@ -3,14 +3,29 @@ import Image from 'next/image'
 
 import s from './styles.module.scss'
 
+interface ProjectProps {
+  title: string
+  text: string
+  link: string
+  tags: string[]
+  inverted?: boolean
+  image: {
+    alt: string
+    src: string
+  }
+}
+
 const Project = ({
-  title = String(),
-  text = String(),
-  link = String(),
-  image = Object(),
-  tags = Array(),
-  inverted = Boolean()
-}) => {
+  title = '',
+  text = '',
+  link = '',
+  image = {
+    alt: '',
+    src: ''
+  },
+  tags = [],
+  inverted = false
+}: ProjectProps) => {
   return (
     <article
       className={`${s.project} ${inverted ? s['project--inverted'] : ''} `}
